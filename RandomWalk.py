@@ -25,5 +25,13 @@ class RandomWalk
             self.x_values.append(x)
             self.y_values.append(y)
 
-
+import matplotlib.pyplot as plt
+from random_walk import RandomWalk
+rw = RandomWalk()
+rw.fill_walk()
+#plotpoints
+plt.style.use('classic')
+fig, ax = plt.subplots()
+ax.scatter(rw.x_values,iw.y_values, s=15)
+plt.show()
 
